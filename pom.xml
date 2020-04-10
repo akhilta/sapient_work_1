@@ -5,10 +5,12 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>sapient_work_1</groupId>
+  <groupId>sapient.training.work</groupId>
   <artifactId>sapient_work_1</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
+  
+  
   
   <name>Replace for sapient_work_1</name>
 </project>
