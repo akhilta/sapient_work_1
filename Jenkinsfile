@@ -6,7 +6,7 @@ node{
   stage('Compile-Package'){
      bat "mvn package"
           bat label: '', script: 'java -cp my-app-1.0-SNAPSHOT.jar com.mycompany.app.App'
-      properties([pipelineTriggers([cron('H 23 * * *')])])
+      properties([pipelineTriggers([cron('H 10 * * *')])])
 
   }
 }
