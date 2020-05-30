@@ -1,0 +1,57 @@
+I have done this assignment using docker mongo image ,docker-network,3 mongo containers
+
+1. Create a new network in docker for mongoDB master slave cluster
+------------------------------------------------------------------
+command --> docker network create mongo-cluster
+
+2. Create three containers with mongoDB instance and each container will act as a separate node
+-----------------------------------------------------------------------------------------------
+command --> docker run -p 30001:27017 --name container_1 --net mongo-cluster mongo mongod --replSet cps
+command --> docker run -p 30002:27017 --name container_2 --net mongo-cluster mongo mongod --replSet cps
+command --> docker run -p 30003:27017 --name container_3 --net mongo-cluster mongo mongod --replSet cps
+
+Now three instances of mongodb is up and running
+get access into any one container iam going into container1
+command --> docker exec container_1 mongo 
+
+command --> db = (new Mongo('localhost:27017')).getDB('test')
+3. Make replica set configuration
+-------------------------------------
+config = {
+  "_id": "cps",
+  "members": [
+    {
+      "_id": 0,
+      "host": "container_1:27017"
+    },
+    {
+      "_id": 1,
+      "host": "container_2:27017"
+    },
+    {
+      "_id": 2,
+      "host": "container_3:27017",
+	  "hidden": true,
+	  "slaveDelay":3600
+	  
+    }
+  ]
+}
+command --> rs.initiate(config)
+Then jump into other containers with exec command as mentioned above
+command --> rs.setSlaveOk(true)
+
+4. Create a new data in primary node
+
+You can know which is primary node by typing command db.isMaster() command in 3 containers
+
+enter some data ..
+for example
+db.clc.insertOne({name:'akhil reddy'})
+5. Check the replication in secondary nodes
+by typing db.cls.find()
+you can see data is replicated in second container and in third container after 1 hr
+
+
+
+
