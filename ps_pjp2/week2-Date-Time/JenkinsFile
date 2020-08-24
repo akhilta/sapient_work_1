@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    stages{
+        stage("clone code"){
+            steps{
+                git url: 'https://github.com/akhilta/sapient_work_1.git'
+            }
+            
+        }
+        stage("build"){
+            steps{
+                bat 'mvn -f ps_pjp2/week2-Date-Time/date-time/pom.xml clean install'
+               
+            }
+        }
+    }
+}
