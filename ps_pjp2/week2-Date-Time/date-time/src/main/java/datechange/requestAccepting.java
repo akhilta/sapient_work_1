@@ -29,7 +29,7 @@ public class requestAccepting {
 		mp.put("date1",date1); 
 		mp.put("date2", date2);
 		mp.put("dateAddObj", ad);  
-		if(operation.equals("ADD")) {
+		if(operation.equals("Add")) {
 			mp.put("oper", 1);
 		}
 		else {

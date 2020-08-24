@@ -19,7 +19,7 @@
 <label for="operations">Choose an operatioin:</label>
 <select id="cars" name="operation">
   <option value="Add">Add</option>
-  <option value="Substract">Substract</option>
+  <option value="Subtract">Subtract</option>
   
 </select>
 <br><br><br>
