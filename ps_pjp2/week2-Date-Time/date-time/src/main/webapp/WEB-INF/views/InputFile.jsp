@@ -15,7 +15,16 @@
 <input type="text" name="date1">
 <h3> enter date 2</h3>
 <input type="text" name="date2">
-<input type="submit" name="submitt" value="Add"> 
+<br>
+<label for="operations">Choose an operatioin:</label>
+<select id="cars" name="operation">
+  <option value="Add">Add</option>
+  <option value="Substract">Substract</option>
+  
+</select>
+<br><br><br>
+<input type="submit" name="submit" value="submit">
+ 
 </form>
 </body>
 </html>

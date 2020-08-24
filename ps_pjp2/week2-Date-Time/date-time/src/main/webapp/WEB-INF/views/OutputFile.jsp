@@ -16,9 +16,13 @@
 		String s1 = (String) request.getAttribute("date1");
 		String s2 = (String) request.getAttribute("date2");
 		addDates ad=(addDates)request.getAttribute("dateAddObj");
-		String ans=ad.addDate(s1, s2);
+		int i=(int)(Integer)request.getAttribute("oper");
+		String ans=ad.addDate(s1, s2,i);
 		out.print(ans);
 	%>
+	<form action="/spring/date-time">
+	<input type="submit" name="submit" value="go back">
+	</form>
 
 </body>
 </html>

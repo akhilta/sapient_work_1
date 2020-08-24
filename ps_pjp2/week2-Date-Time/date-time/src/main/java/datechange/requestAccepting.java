@@ -13,6 +13,7 @@ public class requestAccepting {
 	
 	@Autowired
 	private addDates ad;
+	
 	public addDates getAd() {
 		return ad;
 	}
@@ -24,10 +25,17 @@ public class requestAccepting {
 		return "InputFile";
 	}
 	@RequestMapping(value="/date-time" , method=RequestMethod.POST)
-	public String  m2(@RequestParam String date1,String date2,ModelMap mp) {
-		mp.put("date1",date1);
+	public String  m2(@RequestParam String date1,String date2, String operation,ModelMap mp) {
+		mp.put("date1",date1); 
 		mp.put("date2", date2);
-		mp.put("dateAddObj", ad);
+		mp.put("dateAddObj", ad);  
+		if(operation.equals("ADD")) {
+			mp.put("oper", 1);
+		}
+		else {
+			mp.put("oper",0);
+		}
+		System.out.println(operation+"- ---------->>>>>"); 
 		return "OutputFile";  
 	}
 }
