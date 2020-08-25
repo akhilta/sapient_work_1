@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:21:16:13 +0530] "GET /spring/date-time HTTP/1.1" 404 949 http-bio-9966-exec-2 163
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:21:16:13 +0530] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9966-exec-3 3
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:21:16:23 +0530] "GET /spring/feecal HTTP/1.1" 404 949 http-bio-9966-exec-4 4
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:21:16:35 +0530] "GET /spring/getfee HTTP/1.1" 200 5 http-bio-9966-exec-5 254

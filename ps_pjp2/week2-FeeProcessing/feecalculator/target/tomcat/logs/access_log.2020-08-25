@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:01:10 +0530] "GET /getfee HTTP/1.1" 404 963 http-bio-9966-exec-2 82
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:01:11 +0530] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9966-exec-3 3
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:01:28 +0530] "GET /spring/getfee HTTP/1.1" 404 1001 http-bio-9966-exec-4 151
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:02:24 +0530] "GET /spring/getfee HTTP/1.1" 200 1082 http-bio-9966-exec-5 774
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:12:15 +0530] "GET /getfee HTTP/1.1" 404 963 http-bio-9966-exec-8 2
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:12:17 +0530] "GET /getfee HTTP/1.1" 404 963 http-bio-9966-exec-10 1
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:12:27 +0530] "GET /spring/getfee HTTP/1.1" 200 763 http-bio-9966-exec-10 150
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:20:50 +0530] "GET /spring/getfee HTTP/1.1" 500 4159 http-bio-9966-exec-4 178
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:24:02 +0530] "GET /spring/getfee HTTP/1.1" 200 2206 http-bio-9966-exec-6 127
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:16:56:26 +0530] "GET /spring/getfee HTTP/1.1" 200 2206 http-bio-9966-exec-2 278
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:17:01:06 +0530] "GET /spring/getfee HTTP/1.1" 200 6507 http-bio-9966-exec-9 388
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:17:08:00 +0530] "GET /spring/getfee HTTP/1.1" 200 14197 http-bio-9966-exec-7 320
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:17:08:51 +0530] "GET /spring/getfee HTTP/1.1" 200 12727 http-bio-9966-exec-7 327
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:17:09:41 +0530] "GET /spring/getfee HTTP/1.1" 200 7282 http-bio-9966-exec-7 299
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:17:10:24 +0530] "GET /spring/getfee HTTP/1.1" 200 5749 http-bio-9966-exec-7 381
+0:0:0:0:0:0:0:1 - - [25/Aug/2020:17:25:38 +0530] "GET /spring/getfee HTTP/1.1" 200 5749 http-bio-9966-exec-4 244
