@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:16:27 +0530] "GET /spring-mvc/login HTTP/1.1" 500 15070 http-bio-9966-exec-2 423
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:16:27 +0530] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9966-exec-1 14
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:16:36 +0530] "GET /spring/getaverage HTTP/1.1" 404 985 http-bio-9966-exec-3 5
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:17:09 +0530] "GET /spring/getaverage HTTP/1.1" 404 985 http-bio-9966-exec-5 2
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:18:10 +0530] "GET /spring/getaverage HTTP/1.1" 500 15070 http-bio-9966-exec-7 310
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:19:18 +0530] "GET /spring/getaverage HTTP/1.1" 500 3593 http-bio-9966-exec-9 1019
+0:0:0:0:0:0:0:1 - - [29/Aug/2020:13:19:38 +0530] "GET /spring/getaverage HTTP/1.1" 200 2795 http-bio-9966-exec-10 1698
